@@ -19,6 +19,7 @@
 		96D268FB1C69330C001EA5D8 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D268FA1C69330C001EA5D8 /* MessagesViewController.swift */; };
 		96D268FD1C693313001EA5D8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D268FC1C693313001EA5D8 /* SettingsViewController.swift */; };
 		96D268FF1C693338001EA5D8 /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D268FE1C693338001EA5D8 /* RequestsViewController.swift */; };
+		96D269011C693CBC001EA5D8 /* ThrillistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D269001C693CBC001EA5D8 /* ThrillistDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		96D268FA1C69330C001EA5D8 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		96D268FC1C693313001EA5D8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		96D268FE1C693338001EA5D8 /* RequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsViewController.swift; sourceTree = "<group>"; };
+		96D269001C693CBC001EA5D8 /* ThrillistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThrillistDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				96D268FA1C69330C001EA5D8 /* MessagesViewController.swift */,
 				96D268FC1C693313001EA5D8 /* SettingsViewController.swift */,
 				96D268FE1C693338001EA5D8 /* RequestsViewController.swift */,
+				96D269001C693CBC001EA5D8 /* ThrillistDetailViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				966909FA1C685DC80024207F /* AppDelegate.swift in Sources */,
 				96D268F91C693303001EA5D8 /* NotificationsViewController.swift in Sources */,
 				96D268FD1C693313001EA5D8 /* SettingsViewController.swift in Sources */,
+				96D269011C693CBC001EA5D8 /* ThrillistDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

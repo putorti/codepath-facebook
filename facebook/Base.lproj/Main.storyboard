@@ -112,7 +112,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yzP-Sg-FSb" customClass="NotificationsViewController" customModule="facebook" customModuleProvider="target">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yzP-Sg-FSb">
                                 <rect key="frame" x="0.0" y="63" width="320" height="456"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -126,6 +126,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Notifications" image="notifications_tab" id="794-Tz-lYU"/>
+                    <connections>
+                        <outlet property="NotificationsImage" destination="M7h-jg-pvf" id="jk6-Vo-2Kv"/>
+                        <outlet property="NotificationsScroller" destination="yzP-Sg-FSb" id="P4u-wu-udv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HVZ-tL-a8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

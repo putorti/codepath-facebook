@@ -147,7 +147,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Qi2-0s-85i" customClass="SettingsViewController" customModule="facebook" customModuleProvider="target">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Qi2-0s-85i">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -161,6 +161,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="More" image="more_tab" id="EQZ-pm-T6o"/>
+                    <connections>
+                        <outlet property="SettingsImage" destination="F67-Wi-ges" id="Z7l-6u-fAb"/>
+                        <outlet property="SettingsScroller" destination="Qi2-0s-85i" id="eZq-sS-KvQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cye-zT-5Ht" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

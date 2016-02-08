@@ -8,10 +8,15 @@
 
 import UIKit
 
-class RequestsViewController: UIViewController {
+class RequestsViewController: UIViewController, UIScrollViewDelegate {
 
+    @IBOutlet weak var RequestsScroller: UIScrollView!
+    @IBOutlet weak var RequestsImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        RequestsScroller.delegate = self
+        RequestsScroller.contentSize = RequestsImage.image!.size
 
         // Do any additional setup after loading the view.
     }

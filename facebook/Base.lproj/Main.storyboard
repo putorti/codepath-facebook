@@ -17,7 +17,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ieJ-5w-fW8" customClass="RequestsViewController" customModule="facebook" customModuleProvider="target">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ieJ-5w-fW8">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -31,6 +31,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Requests" image="requests_tab" id="LSc-f3-vdN"/>
+                    <connections>
+                        <outlet property="RequestsImage" destination="izU-Zi-cKB" id="Ixn-P8-XhT"/>
+                        <outlet property="RequestsScroller" destination="ieJ-5w-fW8" id="dXa-2f-b4x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRK-8N-Yl9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

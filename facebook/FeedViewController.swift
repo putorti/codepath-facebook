@@ -11,7 +11,6 @@ import UIKit
 class FeedViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var FeedScroller: UIScrollView!
-    
     @IBOutlet weak var FeedImage: UIImageView!
     
     override func viewDidLoad() {

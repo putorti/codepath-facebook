@@ -1,5 +1,5 @@
 //
-//  FeedViewController.swift
+//  MessagesViewController.swift
 //  facebook
 //
 //  Created by Jason Putorti on 2/8/16.
@@ -8,16 +8,10 @@
 
 import UIKit
 
-class FeedViewController: UIViewController, UIScrollViewDelegate {
+class MessagesViewController: UIViewController {
 
-    @IBOutlet weak var FeedScroller: UIScrollView!
-    
-    @IBOutlet weak var FeedImage: UIImageView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        FeedScroller.delegate = self
-        FeedScroller.contentSize = FeedImage.image!.size
 
         // Do any additional setup after loading the view.
     }
@@ -27,6 +21,7 @@ class FeedViewController: UIViewController, UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+
     /*
     // MARK: - Navigation
 

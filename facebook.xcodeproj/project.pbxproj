@@ -14,10 +14,11 @@
 		96690A041C685DC80024207F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96690A021C685DC80024207F /* LaunchScreen.storyboard */; };
 		96690A0F1C685DC80024207F /* facebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96690A0E1C685DC80024207F /* facebookTests.swift */; };
 		96690A1A1C685DC80024207F /* facebookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96690A191C685DC80024207F /* facebookUITests.swift */; };
-		96690A281C685ECF0024207F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96690A271C685ECF0024207F /* FeedViewController.swift */; };
-		96690A2B1C6866370024207F /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96690A2A1C6866370024207F /* NotificationsViewController.swift */; };
-		96690A2D1C6866810024207F /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96690A2C1C6866810024207F /* RequestsViewController.swift */; };
-		96690A2F1C68668C0024207F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96690A2E1C68668C0024207F /* SettingsViewController.swift */; };
+		96D268F71C6932F4001EA5D8 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D268F61C6932F4001EA5D8 /* FeedViewController.swift */; };
+		96D268F91C693303001EA5D8 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D268F81C693303001EA5D8 /* NotificationsViewController.swift */; };
+		96D268FB1C69330C001EA5D8 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D268FA1C69330C001EA5D8 /* MessagesViewController.swift */; };
+		96D268FD1C693313001EA5D8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D268FC1C693313001EA5D8 /* SettingsViewController.swift */; };
+		96D268FF1C693338001EA5D8 /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D268FE1C693338001EA5D8 /* RequestsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,10 +52,11 @@
 		96690A151C685DC80024207F /* facebookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = facebookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96690A191C685DC80024207F /* facebookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facebookUITests.swift; sourceTree = "<group>"; };
 		96690A1B1C685DC80024207F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96690A271C685ECF0024207F /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		96690A2A1C6866370024207F /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
-		96690A2C1C6866810024207F /* RequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsViewController.swift; sourceTree = "<group>"; };
-		96690A2E1C68668C0024207F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		96D268F61C6932F4001EA5D8 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		96D268F81C693303001EA5D8 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		96D268FA1C69330C001EA5D8 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		96D268FC1C693313001EA5D8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		96D268FE1C693338001EA5D8 /* RequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,10 +139,11 @@
 		96690A291C685ED40024207F /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				96690A271C685ECF0024207F /* FeedViewController.swift */,
-				96690A2A1C6866370024207F /* NotificationsViewController.swift */,
-				96690A2C1C6866810024207F /* RequestsViewController.swift */,
-				96690A2E1C68668C0024207F /* SettingsViewController.swift */,
+				96D268F61C6932F4001EA5D8 /* FeedViewController.swift */,
+				96D268F81C693303001EA5D8 /* NotificationsViewController.swift */,
+				96D268FA1C69330C001EA5D8 /* MessagesViewController.swift */,
+				96D268FC1C693313001EA5D8 /* SettingsViewController.swift */,
+				96D268FE1C693338001EA5D8 /* RequestsViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -276,12 +279,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96690A2D1C6866810024207F /* RequestsViewController.swift in Sources */,
+				96D268FF1C693338001EA5D8 /* RequestsViewController.swift in Sources */,
+				96D268FB1C69330C001EA5D8 /* MessagesViewController.swift in Sources */,
 				966909FC1C685DC80024207F /* ViewController.swift in Sources */,
-				96690A281C685ECF0024207F /* FeedViewController.swift in Sources */,
+				96D268F71C6932F4001EA5D8 /* FeedViewController.swift in Sources */,
 				966909FA1C685DC80024207F /* AppDelegate.swift in Sources */,
-				96690A2B1C6866370024207F /* NotificationsViewController.swift in Sources */,
-				96690A2F1C68668C0024207F /* SettingsViewController.swift in Sources */,
+				96D268F91C693303001EA5D8 /* NotificationsViewController.swift in Sources */,
+				96D268FD1C693313001EA5D8 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +512,7 @@
 				96690A201C685DC80024207F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96690A211C685DC80024207F /* Build configuration list for PBXNativeTarget "facebookTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +521,7 @@
 				96690A231C685DC80024207F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96690A241C685DC80024207F /* Build configuration list for PBXNativeTarget "facebookUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +530,7 @@
 				96690A261C685DC80024207F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

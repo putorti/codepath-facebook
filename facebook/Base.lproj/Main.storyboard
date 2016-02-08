@@ -8,7 +8,7 @@
         <!--Requests-->
         <scene sceneID="VxO-uZ-6nr">
             <objects>
-                <viewController id="0g2-uF-al8" sceneMemberID="viewController">
+                <viewController id="0g2-uF-al8" customClass="RequestsViewController" customModule="facebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Zj-uY-sl4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,21 +39,21 @@
         <!--News Feed-->
         <scene sceneID="1Xq-PE-4aE">
             <objects>
-                <viewController id="5Pg-ML-Ezf" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1kJ-1I-66q">
+                <viewController id="5Pg-ML-Ezf" customClass="FeedViewController" customModule="facebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KZ5-gI-OMl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav" id="jrR-aJ-C8J">
+                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav" highlighted="YES" id="Rvd-qD-gSO">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="b5s-VM-IhE" customClass="FeedViewController" customModule="facebook" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="320" height="454"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="42K-t1-iTe">
+                                <rect key="frame" x="0.0" y="64" width="320" height="456"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_feed" id="hAE-P4-8NL">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1025"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_feed" id="eL8-rS-0G8">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1020"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -61,7 +61,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="News Feed" image="feed_tab" id="Bpq-wZ-IML"/>
+                    <tabBarItem key="tabBarItem" title="News Feed" image="feed_tab" id="W4e-zh-XJW"/>
+                    <connections>
+                        <outlet property="FeedImage" destination="eL8-rS-0G8" id="3eG-sl-B4A"/>
+                        <outlet property="FeedScroller" destination="42K-t1-iTe" id="fBf-tO-M7t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1O0-Ea-f1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -70,7 +74,7 @@
         <!--Messages-->
         <scene sceneID="hp0-YY-vpA">
             <objects>
-                <viewController id="hza-lA-m9B" sceneMemberID="viewController">
+                <viewController id="hza-lA-m9B" customClass="MessagesViewController" customModule="facebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TK2-5m-8tY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,7 +99,7 @@
         <!--Notifications-->
         <scene sceneID="EdJ-b3-gdb">
             <objects>
-                <viewController id="oRl-jC-vzK" sceneMemberID="viewController">
+                <viewController id="oRl-jC-vzK" customClass="NotificationsViewController" customModule="facebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rHM-Kg-Lks">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,7 +130,7 @@
         <!--More-->
         <scene sceneID="diY-mZ-ex7">
             <objects>
-                <viewController id="Rgz-Di-Mhq" sceneMemberID="viewController">
+                <viewController id="Rgz-Di-Mhq" customClass="SettingsViewController" customModule="facebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4vC-4w-fKA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -8,11 +8,16 @@
 
 import UIKit
 
-class ThrillistDetailViewController: UIViewController {
+class ThrillistDetailViewController: UIViewController, UIScrollViewDelegate {
+    
+    @IBOutlet weak var ThrillistScroller: UIScrollView!
+    @IBOutlet weak var ThrillistImage: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        ThrillistScroller.delegate = self
+        ThrillistScroller.contentSize = ThrillistImage.image!.size
+        
         // Do any additional setup after loading the view.
     }
 
@@ -20,7 +25,6 @@ class ThrillistDetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
     @IBAction func onButton(sender: UIButton) {
         
@@ -30,7 +34,11 @@ class ThrillistDetailViewController: UIViewController {
             sender.selected = true
         }
     }
-
+    
+    @IBAction func CloseModal(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

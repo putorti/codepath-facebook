@@ -141,18 +141,29 @@
                                             <action selector="onButton:" destination="cbw-zw-QB0" eventType="touchUpInside" id="mHh-os-G5N"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comment_bar" id="LWp-Bb-RUZ">
+                                        <rect key="frame" x="0.0" y="460" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comment_bar" id="LWp-Bb-RUZ">
-                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XNp-ty-MDd">
+                                <rect key="frame" x="0.0" y="26" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <connections>
+                                    <action selector="CloseModal:" destination="cbw-zw-QB0" eventType="touchUpInside" id="Ga4-yO-ZBL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="vp7-3I-m87"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="700"/>
+                    <connections>
+                        <outlet property="ThrillistImage" destination="dTA-KF-6bh" id="C8r-kj-bq0"/>
+                        <outlet property="ThrillistScroller" destination="Lcx-yM-5n1" id="wI9-tl-OSY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WAl-5n-tuH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

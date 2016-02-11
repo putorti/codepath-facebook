@@ -10,8 +10,17 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var loginForm: UIView!
+    
+    var initialY: CGFloat!
+    var offset: CGFloat!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        initialY = loginForm.frame.origin.y
+        offset = -50
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
 
         // Do any additional setup after loading the view.
     }
@@ -21,6 +30,15 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func keyboardWillShow(notification: NSNotification!) {
+        loginForm.frame.origin.y = initialY + offset
+        
+    }
+    
+    func keyboardWillHide(notification: NSNotification!) {
+        loginForm.frame.origin.y = initialY
+        
+    }
 
     /*
     // MARK: - Navigation

@@ -368,17 +368,17 @@
                                         <rect key="frame" x="0.0" y="0.0" width="295" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" id="jfW-vf-9OD">
-                                        <rect key="frame" x="8" y="8" width="279" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email or phone number" textAlignment="natural" minimumFontSize="17" id="jfW-vf-9OD">
+                                        <rect key="frame" x="8" y="11" width="279" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" id="atL-sN-Ti4">
-                                        <rect key="frame" x="8" y="53" width="279" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="atL-sN-Ti4">
+                                        <rect key="frame" x="8" y="55" width="279" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5M6-b0-GdM">
                                         <rect key="frame" x="-26" y="103" width="347" height="52"/>
@@ -386,6 +386,10 @@
                                         <state key="normal" image="login_button_enabled"/>
                                         <state key="disabled" image="login_button_disabled"/>
                                         <state key="selected" image="logging_in_button"/>
+                                        <connections>
+                                            <action selector="didPressLogin:" destination="UJK-8m-Rfx" eventType="touchUpInside" id="MJo-1j-S8a"/>
+                                            <segue destination="VJL-0g-6qJ" kind="modal" id="6gr-X1-cma"/>
+                                        </connections>
                                     </button>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" id="d7e-4N-mp6">
                                         <rect key="frame" x="257" y="119" width="20" height="20"/>
@@ -415,12 +419,26 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.16862745098039217" green="0.29411764705882354" blue="0.58039215686274515" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="10M-Y6-yGa" appends="YES" id="Wu4-M9-hqz"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="emailField" destination="jfW-vf-9OD" id="hCL-na-k3y"/>
+                        <outlet property="facebookImage" destination="9kv-kD-Aky" id="dsW-t6-Agc"/>
+                        <outlet property="loader" destination="d7e-4N-mp6" id="oMq-XC-oec"/>
+                        <outlet property="loginButton" destination="5M6-b0-GdM" id="iEj-7Q-CXU"/>
                         <outlet property="loginForm" destination="FVj-uV-3Bi" id="ipy-Jw-cUd"/>
+                        <outlet property="passwordField" destination="atL-sN-Ti4" id="OV8-qV-dHj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2G2-N8-MI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="10M-Y6-yGa">
+                    <connections>
+                        <action selector="didTap:" destination="UJK-8m-Rfx" id="TN1-Y4-73c"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-487" y="631"/>
         </scene>

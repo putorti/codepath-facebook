@@ -14,6 +14,8 @@
 		96690A041C685DC80024207F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96690A021C685DC80024207F /* LaunchScreen.storyboard */; };
 		96690A0F1C685DC80024207F /* facebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96690A0E1C685DC80024207F /* facebookTests.swift */; };
 		96690A1A1C685DC80024207F /* facebookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96690A191C685DC80024207F /* facebookUITests.swift */; };
+		967A743D1C6C343C0077FBAE /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A743C1C6C343C0077FBAE /* Common.swift */; };
+		967A743F1C6C34B50077FBAE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A743E1C6C34B50077FBAE /* LoginViewController.swift */; };
 		96D268F71C6932F4001EA5D8 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D268F61C6932F4001EA5D8 /* FeedViewController.swift */; };
 		96D268F91C693303001EA5D8 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D268F81C693303001EA5D8 /* NotificationsViewController.swift */; };
 		96D268FB1C69330C001EA5D8 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D268FA1C69330C001EA5D8 /* MessagesViewController.swift */; };
@@ -56,6 +58,8 @@
 		96690A151C685DC80024207F /* facebookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = facebookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96690A191C685DC80024207F /* facebookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facebookUITests.swift; sourceTree = "<group>"; };
 		96690A1B1C685DC80024207F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		967A743C1C6C343C0077FBAE /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		967A743E1C6C34B50077FBAE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		96D268F61C6932F4001EA5D8 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		96D268F81C693303001EA5D8 /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		96D268FA1C69330C001EA5D8 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +122,7 @@
 				96690A291C685ED40024207F /* View Controllers */,
 				966909F91C685DC80024207F /* AppDelegate.swift */,
 				966909FB1C685DC80024207F /* ViewController.swift */,
+				967A743C1C6C343C0077FBAE /* Common.swift */,
 				966909FD1C685DC80024207F /* Main.storyboard */,
 				96690A001C685DC80024207F /* Assets.xcassets */,
 				96690A021C685DC80024207F /* LaunchScreen.storyboard */,
@@ -156,6 +161,7 @@
 				96D269061C69458D001EA5D8 /* CheckInViewController.swift */,
 				96D269041C694578001EA5D8 /* PhotoViewController.swift */,
 				96D269081C6945A0001EA5D8 /* StatusViewController.swift */,
+				967A743E1C6C34B50077FBAE /* LoginViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -295,12 +301,14 @@
 				96D268FB1C69330C001EA5D8 /* MessagesViewController.swift in Sources */,
 				966909FC1C685DC80024207F /* ViewController.swift in Sources */,
 				96D268F71C6932F4001EA5D8 /* FeedViewController.swift in Sources */,
+				967A743D1C6C343C0077FBAE /* Common.swift in Sources */,
 				96D269071C69458D001EA5D8 /* CheckInViewController.swift in Sources */,
 				966909FA1C685DC80024207F /* AppDelegate.swift in Sources */,
 				96D268F91C693303001EA5D8 /* NotificationsViewController.swift in Sources */,
 				96D268FD1C693313001EA5D8 /* SettingsViewController.swift in Sources */,
 				96D269011C693CBC001EA5D8 /* ThrillistDetailViewController.swift in Sources */,
 				96D269091C6945A0001EA5D8 /* StatusViewController.swift in Sources */,
+				967A743F1C6C34B50077FBAE /* LoginViewController.swift in Sources */,
 				96D269051C694578001EA5D8 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

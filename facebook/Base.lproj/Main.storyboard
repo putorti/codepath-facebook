@@ -348,6 +348,56 @@
             </objects>
             <point key="canvasLocation" x="1505" y="1633"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Par-pn-DHS">
+            <objects>
+                <viewController id="UJK-8m-Rfx" customClass="LoginViewController" customModule="facebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="baL-vk-7pi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" id="9kv-kD-Aky">
+                                <rect key="frame" x="73" y="103" width="174" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="FVj-uV-3Bi" customClass="fieldParentView">
+                                <rect key="frame" x="13" y="202" width="295" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="form_bg" id="BpM-89-B4y">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="95"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" id="jfW-vf-9OD">
+                                        <rect key="frame" x="8" y="8" width="279" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" id="atL-sN-Ti4">
+                                        <rect key="frame" x="8" y="53" width="279" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5M6-b0-GdM">
+                                <rect key="frame" x="-13" y="300" width="347" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="login_button_enabled"/>
+                                <state key="disabled" image="login_button_disabled"/>
+                                <state key="selected" image="logging_in_button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16862745098039217" green="0.29411764705882354" blue="0.58039215686274515" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2G2-N8-MI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-487" y="631"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3kT-YC-CEW">
             <objects>
@@ -369,6 +419,19 @@
             </objects>
             <point key="canvasLocation" x="361" y="631"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="G9i-QN-QRy">
+            <objects>
+                <viewController id="iP6-U7-ffP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nee-DP-GPl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iY1-KN-3jN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="comment_bar" width="320" height="44"/>
@@ -377,9 +440,14 @@
         <image name="create_photo" width="320" height="568"/>
         <image name="create_status" width="320" height="568"/>
         <image name="feed_tab" width="27" height="27"/>
+        <image name="form_bg" width="295" height="95"/>
         <image name="home_feed" width="320" height="1025"/>
         <image name="like_btn" width="17" height="40"/>
         <image name="like_btn_selected" width="17" height="40"/>
+        <image name="logging_in_button" width="293" height="52"/>
+        <image name="login_button_disabled" width="293" height="52"/>
+        <image name="login_button_enabled" width="293" height="52"/>
+        <image name="logo" width="174" height="43"/>
         <image name="messages" width="320" height="460"/>
         <image name="messages_tab" width="27" height="27"/>
         <image name="more_tab" width="27" height="27"/>

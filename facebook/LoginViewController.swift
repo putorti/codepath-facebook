@@ -41,7 +41,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loginButton.
         initialY = loginForm.frame.origin.y
         offset = -50
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
@@ -58,13 +57,11 @@ class LoginViewController: UIViewController {
     func keyboardWillShow(notification: NSNotification!) {
         loginForm.frame.origin.y = initialY + offset
         facebookImage.frame.origin.y = initialY + offset
-        
     }
     
     func keyboardWillHide(notification: NSNotification!) {
         loginForm.frame.origin.y = initialY
         facebookImage.frame.origin.y = initialY
-        
     }
 
     /*

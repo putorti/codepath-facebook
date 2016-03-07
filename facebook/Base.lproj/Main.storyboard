@@ -74,22 +74,42 @@
                                     <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding1" id="NtE-b4-mpN">
                                         <rect key="frame" x="4" y="83" width="154" height="154"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Rem-oP-Eez" appends="YES" id="wwA-EF-soE"/>
+                                        </connections>
                                     </imageView>
                                     <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding2" id="jYP-MK-4V5">
                                         <rect key="frame" x="4" y="241" width="154" height="154"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="iim-Co-i1D" appends="YES" id="dtM-xs-iyy"/>
+                                        </connections>
                                     </imageView>
                                     <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding3" id="8DK-j9-RcW">
                                         <rect key="frame" x="162" y="83" width="154" height="102"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="mm6-XG-Dd5" appends="YES" id="2Bg-TE-xF7"/>
+                                        </connections>
                                     </imageView>
                                     <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding4" id="IUu-7V-X7k">
                                         <rect key="frame" x="162" y="188" width="154" height="102"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="eRH-qP-G3T" appends="YES" id="IiT-HT-RPr"/>
+                                        </connections>
                                     </imageView>
                                     <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wedding5" id="zHo-UL-2a4">
                                         <rect key="frame" x="162" y="293" width="154" height="102"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="epN-7D-UwQ" appends="YES" id="zg6-5Q-7kj"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
                             </scrollView>
@@ -124,6 +144,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1O0-Ea-f1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="iim-Co-i1D"/>
+                <tapGestureRecognizer id="Rem-oP-Eez"/>
+                <tapGestureRecognizer id="mm6-XG-Dd5"/>
+                <tapGestureRecognizer id="eRH-qP-G3T"/>
+                <tapGestureRecognizer id="epN-7D-UwQ"/>
             </objects>
             <point key="canvasLocation" x="-675" y="1633"/>
         </scene>

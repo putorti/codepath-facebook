@@ -170,11 +170,31 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1O0-Ea-f1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="iim-Co-i1D"/>
-                <tapGestureRecognizer id="Rem-oP-Eez"/>
-                <tapGestureRecognizer id="mm6-XG-Dd5"/>
-                <tapGestureRecognizer id="eRH-qP-G3T"/>
-                <tapGestureRecognizer id="epN-7D-UwQ"/>
+                <tapGestureRecognizer id="iim-Co-i1D">
+                    <connections>
+                        <action selector="tapPhoto:" destination="5Pg-ML-Ezf" id="XdU-Hv-4uG"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Rem-oP-Eez">
+                    <connections>
+                        <action selector="tapPhoto:" destination="5Pg-ML-Ezf" id="7vY-wO-2IJ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="mm6-XG-Dd5">
+                    <connections>
+                        <action selector="tapPhoto:" destination="5Pg-ML-Ezf" id="KSa-Ut-bhB"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="eRH-qP-G3T">
+                    <connections>
+                        <action selector="tapPhoto:" destination="5Pg-ML-Ezf" id="TX1-L2-l00"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="epN-7D-UwQ">
+                    <connections>
+                        <action selector="tapPhoto:" destination="5Pg-ML-Ezf" id="YwW-Nl-GNp"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-675" y="1633"/>
         </scene>

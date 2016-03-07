@@ -27,8 +27,9 @@ class FeedViewController: UIViewController, UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func tapPhoto(sender: UIImage) {
-        zoomImage = sender
+    @IBAction func tapPhoto(sender: UIGestureRecognizer) {
+        let imageView = sender.view! as! UIImageView
+        zoomImage = imageView.image
         performSegueWithIdentifier("zoomPhotoSegue", sender: self)
     }
     

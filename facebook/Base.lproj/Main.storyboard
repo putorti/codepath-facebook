@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="-53" y="1633"/>
         </scene>
-        <!--Photo View Controller-->
+        <!--Zoom Photo View Controller-->
         <scene sceneID="GVp-O6-Jax">
             <objects>
-                <viewController id="Hgf-N1-w82" customClass="PhotoViewController" customModule="facebook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Hgf-N1-w82" customClass="ZoomPhotoViewController" customModule="facebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Jz-Aq-J7c">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -451,7 +451,7 @@
                                 <rect key="frame" x="73" y="103" width="174" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" id="FVj-uV-3Bi" customClass="fieldParentView">
+                            <view contentMode="scaleToFill" id="FVj-uV-3Bi">
                                 <rect key="frame" x="13" y="202" width="295" height="159"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>

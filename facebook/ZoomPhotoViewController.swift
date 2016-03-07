@@ -1,24 +1,22 @@
 //
-//  FeedViewController.swift
+//  ZoomPhotoViewController.swift
 //  facebook
 //
-//  Created by Jason Putorti on 2/8/16.
+//  Created by Jason Putorti on 3/6/16.
 //  Copyright © 2016 Jason Putorti. All rights reserved.
 //
 
 import UIKit
 
-class FeedViewController: UIViewController, UIScrollViewDelegate {
-
-    @IBOutlet weak var FeedScroller: UIScrollView!
-    @IBOutlet weak var FeedImage: UIImageView!
-    var zoomImage: UIImage!
+class ZoomPhotoViewController: UIViewController {
+    
+    var image: UIImage!
+    @IBOutlet weak var zoomedImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        FeedScroller.delegate = self
-        FeedScroller.contentSize = FeedImage.image!.size
-
+        zoomedImage.image = image!
+        
         // Do any additional setup after loading the view.
     }
 
@@ -27,17 +25,10 @@ class FeedViewController: UIViewController, UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func tapPhoto(sender: UIImage) {
-        zoomImage = sender
-        performSegueWithIdentifier("zoomPhotoSegue", sender: self)
+    @IBAction func closeModal(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        
-        var destinationViewController = segue.destinationViewController as! ZoomPhotoViewController
-        destinationViewController.image = self.zoomImage
-    }
-    
+
     /*
     // MARK: - Navigation
 

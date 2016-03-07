@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9632F44E1C8D1C6300375B01 /* ZoomPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9632F44D1C8D1C6300375B01 /* ZoomPhotoViewController.swift */; };
 		966909FA1C685DC80024207F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966909F91C685DC80024207F /* AppDelegate.swift */; };
 		966909FC1C685DC80024207F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966909FB1C685DC80024207F /* ViewController.swift */; };
 		966909FF1C685DC80024207F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966909FD1C685DC80024207F /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9632F44D1C8D1C6300375B01 /* ZoomPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomPhotoViewController.swift; sourceTree = "<group>"; };
 		966909F61C685DC80024207F /* facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = facebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		966909F91C685DC80024207F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		966909FB1C685DC80024207F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				96D269041C694578001EA5D8 /* PhotoViewController.swift */,
 				96D269081C6945A0001EA5D8 /* StatusViewController.swift */,
 				967A743E1C6C34B50077FBAE /* LoginViewController.swift */,
+				9632F44D1C8D1C6300375B01 /* ZoomPhotoViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			files = (
 				96D268FF1C693338001EA5D8 /* RequestsViewController.swift in Sources */,
 				96D268FB1C69330C001EA5D8 /* MessagesViewController.swift in Sources */,
+				9632F44E1C8D1C6300375B01 /* ZoomPhotoViewController.swift in Sources */,
 				966909FC1C685DC80024207F /* ViewController.swift in Sources */,
 				96D268F71C6932F4001EA5D8 /* FeedViewController.swift in Sources */,
 				967A743D1C6C343C0077FBAE /* Common.swift in Sources */,
